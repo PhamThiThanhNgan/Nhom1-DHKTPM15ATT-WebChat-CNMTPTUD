@@ -1,0 +1,65 @@
+@import "../../variable.scss";
+
+.container {
+    max-width: 1028px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+.header {
+    text-align: center;
+    padding: 1rem 0;
+
+    h1 {
+        font-weight: $font-max;
+        font-size: $fs-d;
+        color: #1458df;
+    }
+}
+
+.section {
+
+    .wrap-form {
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        border-radius: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        transition: height 0.3s ease-in-out;
+
+        .error-message {
+            font-size: 11px;
+            color: #dc3545;
+        }
+        .success-message{
+            font-size: 13px;
+            color: #0f5132;
+        }
+    }
+
+    img {
+        width: 100%;
+        filter: grayscale(0.9), blur(1);
+
+        &:hover {
+            filter: grayscale(0.1);
+        }
+    }
+
+    .title-form {
+        text-align: center;
+    }
+
+    .section-from {
+        font-size: 1.2rem;
+
+        .section-3 {
+            .section-4 {
+                a {
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

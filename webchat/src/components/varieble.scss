@@ -1,0 +1,21 @@
+@mixin group {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    line-height: 80px;
+    position: relative;
+    &:hover{
+        background: #c5e9f0;
+        }
+}
+@mixin img {
+    
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 1.5px #e6e1e1 solid;
+    display: block;
+    max-width: 80%;
+    cursor: pointer;
+    margin-left: 10px;
+}

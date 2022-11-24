@@ -1,0 +1,32 @@
+@import '../varieble.scss';
+.containerr{
+    max-width: 80px;
+    justify-content: space-between;
+    flex-direction: column;
+    .seting{
+      height: 100vh;
+      color: black;
+      background: #0091ff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      .avt{
+        padding-top: 10px;
+        img{
+           @include img();
+            max-width: 100%;
+            object-fit: cover;
+        }
+      }
+      .chatgroup{ @include group();
+            margin-top: 30px
+        }
+      .list{ @include group(); }
+      .add{ @include group(); }
+      .cloud{@include group();}
+      .bussiness{@include group();}
+      .cofig{@include group();}
+      .singout{@include group();}
+    }
+
+}
