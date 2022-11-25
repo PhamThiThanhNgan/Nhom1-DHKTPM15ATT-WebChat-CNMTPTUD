@@ -11,7 +11,7 @@ import { ReactComponent as UploadImage } from '../../asset/svg/UploadImage.svg';
 import EmojiPicker from "emoji-picker-react";
 import GroupChatModal from "../modal/GroupChatModal";
 
-const ENDPOINT = "http://localhost:8000";
+const ENDPOINT = "http://chatwebbe.ga:8000";
 var socket, selectedChatCompare;
 
 const ChatContent = ({ fetchAgain, setFetchAgain }) => {
