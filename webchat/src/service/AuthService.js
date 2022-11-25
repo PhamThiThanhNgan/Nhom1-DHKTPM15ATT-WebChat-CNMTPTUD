@@ -1,19 +1,20 @@
 import axiosService from '../config/axiosService';
 import _ from 'lodash';
+import axios from 'axios';
 
-export const register = (formData) => axiosService.post(
+export const register = (formData) => axios.post(
      `${process.env.REACT_APP_API_ENDPOINT}/auth/register`, formData, null
 );
 
-export const login = (formData) => axiosService.post(
+export const login = (formData) => axios.post(
      `${process.env.REACT_APP_API_ENDPOINT}/auth/login`, formData, null
 );
 
-export const forgotPassword = (formData) => axiosService.post(
+export const forgotPassword = (formData) => axios.post(
      `${process.env.REACT_APP_API_ENDPOINT}/auth/forgot-password`, formData, null
 );
 
-export const recoveryPassword = (formData, id, token) => axiosService.post(
+export const recoveryPassword = (formData, id, token) => axios.post(
      `${process.env.REACT_APP_API_ENDPOINT}/auth/reset-password/${id}/${token}`, formData, null
 );
 
