@@ -15,7 +15,7 @@ import FriendRequestItem from "./FriendRequestItem";
 import { getMe } from "../../service/AuthService";
 
 var socket;
-const ENDPOINT = "http://localhost:8000";
+const ENDPOINT = "http://chatwebbe.ga:8000";
 
 function FriendRequestList() {
 
